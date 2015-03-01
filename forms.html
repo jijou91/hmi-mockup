@@ -24,27 +24,23 @@
 	<div data-role="page">
 
 		<div data-role="header">
-				<h1>Easycracy</h1>
-		</div>
-		<br /> <br />
-		<div data-role="content">
-			<center><img src="img/anon.png"></center>
-			<br />
-			<!-- ToDo: POST action to login.html which redirects to forms.html -->
-			<form method="get" action="forms.html">
-				<label for="email">Email:</label>
-				<input name="email" id="email" value="hello@easycracy.com" type="text">
-				<label for="password">Password:</label>
-				<input name="password" id="password" value="helloworld" autocomplete="off" type="password">
-				<br />
-				<center>
-					<input type="submit" value="Login">
-					<br />
-					<a href="signup.html" class="ui-shadow ui-btn ui-btn-inline ui-corner-all">No account yet?</a>
-				</center>
+			<form class="ui-filterable inline">
+				<input id="filter-forms" data-type="search" data-inline="true">
+				
 			</form>
+			<div class="ui-btn-right">
+				<a href="#" data-role="button" data-icon="tag" data-iconpos="notext">Tag</a>
+			</div>
 		</div>
-		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-input="#filter-forms">
+				<li><a href="#" class="ui-btn ui-icon-plus ui-btn-icon-right">New procedure</a></li>
+				<li><a href="tasks.html?task=move">Moving in Chatenay</a></li>
+				<li><a href="tasks.html?task=passport">Renew passport</a></li>
+				<li><a href="tasks.html?task=trip">Plan trip to Australia</a></li>
+			</ul>
+
+		</div>
 	</div>
 </body>
 </html>
