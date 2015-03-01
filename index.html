@@ -30,16 +30,18 @@
 		<div data-role="content">
 			<center><img src="img/anon.png"></center>
 			<br />
-			<label for="text-basic">Email:</label>
-			<input name="text-basic" id="text-basic" value="hello@easycracy.com" type="text">
-			<label for="password">Password:</label>
-			<input name="password" id="password" value="helloworld" autocomplete="off" type="password">
-			<br />
-			<center>
-				<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-right ui-icon-check">Login</a>
+			<form method="get" action="login.html">
+				<label for="email">Email:</label>
+				<input name="email" id="email" value="hello@easycracy.com" type="text">
+				<label for="password">Password:</label>
+				<input name="password" id="password" value="helloworld" autocomplete="off" type="password">
 				<br />
-				<a href="signup.html" class="ui-shadow ui-btn ui-btn-inline ui-corner-all">No account yet?</a>
-			</center>
+				<center>
+					<input type="submit" value="Login">
+					<br />
+					<a href="signup.html" class="ui-shadow ui-btn ui-btn-inline ui-corner-all">No account yet?</a>
+				</center>
+			</form>
 		</div>
 		
 	</div>
